@@ -51,7 +51,7 @@ project: <project>
 type: session
 date: YYYY-MM-DD
 tags: [lowercase, kebab-case, tools-and-topics]
-summary: One specific line a later search will hit, e.g. "Seeded a test player on orbstack via UpsertProfile on upsert-profile"
+summary: One specific line a later search will hit, e.g. "Seeded a test order in the local cluster via CreateOrder on order-requests"
 ---
 Part of [[<project>]]. Topics: [[<topic>]]
 
@@ -94,7 +94,7 @@ Update it when the project's purpose, structure, decisions or recipes change. Wh
 
 ### Topic page
 
-Path: `<vault>/topics/<topic>.md`, named in kebab-case, for example `orbstack-cluster` or `kafka-debezium`. A topic is a tool, system or concept that more than one project uses. Create the page when the topic turns up in a second project, or when the user asks for it, not before. Like a project note, it describes the current state and is rewritten in place. Keep it under about 100 lines.
+Path: `<vault>/topics/<topic>.md`, named in kebab-case, for example `local-cluster` or `kafka-cdc`. A topic is a tool, system or concept that more than one project uses. Create the page when the topic turns up in a second project, or when the user asks for it, not before. Like a project note, it describes the current state and is rewritten in place. Keep it under about 100 lines.
 
 ```markdown
 ---
@@ -160,4 +160,4 @@ Check the items below in order. Report findings as a short list grouped by check
 
 ## Never write
 
-Secrets, passwords, tokens, API keys, private keys, connection strings, or personal data of customers or players. Record where a secret lives (for example "the `wallets-db` secret in the `apps` namespace"), never its value. The vault is pushed to GitHub.
+Secrets, passwords, tokens, API keys, private keys, connection strings, or personal data of customers or players. Record where a secret lives (for example "the `orders-db` secret in the `apps` namespace"), never its value. The vault is pushed to GitHub.
